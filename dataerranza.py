@@ -2,9 +2,9 @@
 # coding: utf-8
 
 # In[1]:
+import streamlit as st  # ✅ This must come first
 st.set_page_config(page_title="SQL Travel Archetype", layout="wide")
 
-import streamlit as st
 import pandas as pd
 import numpy as np
 import random
