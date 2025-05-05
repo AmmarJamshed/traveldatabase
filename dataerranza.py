@@ -2,7 +2,7 @@
 # coding: utf-8
 
 # In[1]:
-
+st.set_page_config(page_title="SQL Travel Archetype", layout="wide")
 
 import streamlit as st
 import pandas as pd
@@ -95,7 +95,6 @@ for name in models:
 # --------------------------
 # Streamlit UI
 # --------------------------
-st.set_page_config(page_title="SQL Travel Archetype", layout="wide")
 st.title("🌍 SQL-Powered Erranza Travel Archetype Engine")
 
 model_choice = st.sidebar.selectbox("Select Model", list(models.keys()))
