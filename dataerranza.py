@@ -21,10 +21,10 @@ from sklearn.model_selection import train_test_split
 # --------------------------
 def get_connection():
     return mysql.connector.connect(
-        host="localhost",  # or your DB host
-        user="root",       # your username
-        password="Ammarjamshed123",  # your password
-        database="travel_db"
+        host=st.secrets["mysql"]["host"],
+        user=st.secrets["mysql"]["user"],
+        password=st.secrets["mysql"]["password"],
+        database=st.secrets["mysql"]["database"]
     )
 
 # --------------------------
